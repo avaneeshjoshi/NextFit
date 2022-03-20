@@ -1,34 +1,296 @@
-html {
-    background-color: #577399;
+:root {
+  --black: 
+rgba(0, 0, 0, 1);
+  --waikawa-gray: 
+rgba(87, 115, 153, 1);
+  --jumbo: 
+rgba(124, 127, 135, 1);
+  --spindle: 
+rgba(189, 213, 234, 1);
+  --link-water: 
+rgba(217, 222, 236, 1);
+  --white: 
+rgba(255, 255, 255, 1);
+
+  --font-size-m: 20px;
+  --font-size-l: 22px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 36px;
+  --font-size-xxxxl: 55px;
+  --font-size-xl2: 48px;
+
+  --font-family-libre_barcode_128_text: "Libre Barcode 128 Text";
+  --font-family-libre_barcode_128_text-regular: "Libre Barcode 128 Text-Regular";
+  --font-family-readex_pro: "Readex Pro";
+  --font-family-readex_pro-extralight: "Readex Pro-ExtraLight";
+  --font-family-roboto: "Roboto";
+  --font-family-source_sans_3: "Source Sans 3";
 }
 
-.navbar-brand{
-    float:left;
-    padding:14px 16px;
-    }
-ul {
-    list-style-type: none;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #BDD5EA;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+
+html {
+  background-color:#577399;
+  color: white;
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+.sourcesans3-light-white-24px {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_3);
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  font-style: normal;
+}
+.sourcesans3-light-jumbo-20px {
+  color: var(--jumbo);
+  font-family: var(--font-family-source_sans_3);
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  font-style: normal;
+}
+.sourcesans3-light-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_3);
+  font-size: var(--font-size-m);
+  font-weight: 300;
+  font-style: normal;
+}
+.homepage {
+  align-items: center;
+  background-color: 
+#577399;
+  display: flex;
+  flex-direction: column;
+  height: 982px;
+  padding: 40px 0;
+  width: 1512px;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.flex-row-1 {
+  align-items: center;
+  display: flex;
+  height: 651px;
+  margin-right: 34.47px;
+  margin-top: 40px;
+  min-width: 1308px;
+  font-size: large;
+}
+
+.flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 79.99px;
+  min-height: 237px;
+  width: 602px;
+}
+
+.title {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xxxxl);
+  font-weight: 200;
+  height: 110px;
+  letter-spacing: 0;
+  width: 602px;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lets-get-you-in-shape {
+  color: var(--white);
+  font-family: var(--font-family-source_sans_3);
+  font-size: var(--font-size-xxl);
+  font-weight: 400;
+  height: 51px;
+  letter-spacing: 0;
+  margin-top: 10px;
+}
+
+.flex-row-2 {
+  align-items: center;
+  display: flex;
+  margin-top: 32px;
+  min-width: 390px;
+}
+
+.arrow-1 {
+  height: 22px;
+  margin-left: 12px;
+  margin-top: 0.09px;
+  width: 51px;
+}
+
+.select-one-of-the-options {
+  height: 34px;
+  letter-spacing: 3.6px;
+  min-width: 328px;
+}
+
+.overlap-group-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 128px;
+  min-height: 651px;
+  width: 578px;
+}
+
+.overlap-group4 {
+  height: 324px;
+  position: relative;
+  width: 578px;
+}
+
+.workout-plans {
+  height: 34px;
+  left: 25px;
+  letter-spacing: 3.6px;
+  position: absolute;
+  top: 290px;
+}
+
+.ellipse-3 {
+  height: 313px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 578px;
+}
+
+.overlap-group5 {
+  height: 321px;
+  margin-right: 0.13px;
+  margin-top: 6px;
+  position: relative;
+  width: 565px;
+}
+
+.ellipse-4 {
+  height: 301px;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  width: 565px;
+}
+
+.diet-plans {
+  height: 34px;
+  left: 419px;
+  letter-spacing: 3.6px;
+  position: absolute;
+  top: 0;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 19.9px;
+  min-width: 1435px;
+}
+
+.group {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 10px;
+  min-width: 180px;
+}
+
+.overlap-group {
+  align-items: flex-end;
+  background-color: var(--spindle);
+  display: flex;
+  height: 35px;
+  min-width: 178px;
+  padding: 3px 22px;
+}
+
+.leaderboard {
+  height: 28px;
+  letter-spacing: 3px;
+  width: 134px;
+}
+
+.group-8 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  margin-left: 212px;
+  margin-top: 10px;
+  min-width: 180px;
+}
+
+.overlap-group3 {
+  align-items: flex-end;
+  background-color: var(--spindle);
+  display: flex;
+  height: 35px;
+  min-width: 178px;
+  padding: 3px 35px;
+}
+
+.education {
+  height: 28px;
+  letter-spacing: 3px;
+  width: 107px;
+}
+
+.overlap-group1 {
+  align-items: flex-end;
+  background-color: var(--spindle);
+  display: flex;
+  height: 35px;
+  min-width: 178px;
+  padding: 3px 49px;
+}
+
+.profile {
+  height: 28px;
+  letter-spacing: 3px;
+  width: 72px;
+}
+
+.overlap-group2 {
+  align-items: flex-end;
+  background-color: var(--spindle);
+  display: flex;
+  height: 35px;
+  min-width: 178px;
+  padding: 3px 31px;
+}
+
+.challenges {
+  height: 28px;
+  letter-spacing: 3px;
+  width: 116px;
+}
+
+.vector {
+  height: 134px;
+  width: 382px;
+}
+
+.rectangle-7 {
+  background-color: 
+#d9deec;
+  height: 85px;
+  margin-top: 32px;
+  width: 1512px;
+}
