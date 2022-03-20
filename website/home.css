@@ -1,0 +1,34 @@
+html {
+    background-color: #577399;
+}
+
+.navbar-brand{
+    float:left;
+    padding:14px 16px;
+    }
+ul {
+    list-style-type: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BDD5EA;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
