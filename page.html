@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>Sample app</title>
+    <link
+      ...
+      href="{{ url_for('static', filename='stylesheets/style.css') }}"
+    />
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+    <script src="../static/move.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <navbar>
+      <ul id="logo-menu">
+        <li id="moveio">NextFit</li>
+      </ul>
+      <ul id="menu-items">
+        <li id="challenge_btn">Challenges</li>
+        <li id="classes_btn">Classes</li>
+        <li id="leaderboard_btn">Leaderboard</li>
+        <li id="account_btn">Account</li>
+      </ul>
+    </navbar>
+    <section id="hero" class="pages">
+      <div id="demonstrations">
+        <div id="demonstration"></div>
+      </div>
+      <div id="description">
+        <h1>Reimagining Fitness</h1>
+        <p>
+          Going to the gym can be intimidating. Getting a personal trainer is
+          expensive. Home training is hard to consistently do. NextFit is the
+          solution to all of these problems. With <em>exciting</em> daily
+          challenges and classes, home gym has never been more attainable and
+          fun!
+        </p>
+        <button id="start">Get Started</button>
+      </div>
+      <section id="transition-banner">Reimagining Fitness at NextFit</section>
+      <section id="featured"></section>
+    </section>
+
+    <section id="challenges" class="pages hidden">
+      <div id="challenge_box" class="col-lg-8 offset-lg-2">
+        <h1 class="mt-5">Daily Challenge March 20 2022</h1>
+        <img id="challenge_window" class="hero" src="" width="100%" />
+      </div>
+      <div id="inst"></div>
+    </section>
+
+    <section id="classes" class="pages hidden">
+      <div id="squat" class="class-card">
+        <div class="class-img"></div>
+        <div class="class-desc">
+          <h1>Squat</h1>
+          <h4>25minutes</h4>
+          <h4>
+            8 sessions. Squats help build a strong foundation to any body.
+          </h4>
+        </div>
+      </div>
+      <div id="pushup" class="class-card">
+        <div class="class-img"></div>
+        <div class="class-desc">
+          <h1>Squat</h1>
+          <h4>25minutes</h4>
+          <h4>
+            8 sessions. Squats help build a strong foundation to any body.
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section id="classes" class="pages hidden"></section>
+    <section id="squats" class="pages">
+      <div id="squats_box" class="col-lg-8 offset-lg-2 pages">
+        <img id="squats_window" class="hero" src="" width="100%" />
+      </div>
+      <div id="inst2"></div>
+    </section>
+    <section id="leaderboard" class="pages hidden">
+      <div id="podium_area">
+        <div id="bronze" class="podium">
+          <h4>Pranav Gopalabhatla</h4>
+          <p>25 Points</p>
+        </div>
+        <div id="gold" class="podium">
+          <h4>Avaneesh Joshi</h4>
+          <p>27 Points</p>
+        </div>
+        <div id="silver" class="podium">
+          <h4>Ashwin </h4>
+          <p>26 Points</p>
+        </div>
+      </div>
+      <div id="chart_ranking"></div>
+    </section>
+    <section id="account" class="pages hidden">
+      <div id="profileCard">
+        <div id="leftCard">
+          <p class="name ans"><b>Welcome! Pranav Gopalabhatla</b></p>
+          <p class="title">Consequetive logins:</p>
+          <p class="ans">2</p>
+          <p class="title">Longest Streak:</p>
+          <p class="ans">2</p>
+          <p class="title">Favorite Exercise:</p>
+          <p class="ans">Pushup</p>
+        </div>
+        <div id="rightCard">
+          <p>Your Recent Pushup Numbers</p>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </section>
+    <section id="login" class="pages hidden"></section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</html>
