@@ -1,0 +1,425 @@
+html {
+  font-size: 8px;
+  margin: 0px;
+}
+
+@media only screen and (min-width: 150px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+navbar {
+  display: flex;
+  align-items: center;
+  background-color: #021d35;
+  opacity: 0.9;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  font-size: 0.7em;
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+#moveio {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0px;
+  font-family: "Questrial", sans-serif;
+  background-color: #021d35;
+  color: white;
+}
+
+#hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 50vh;
+  padding: 200px 0 50px 0;
+  flex-wrap: wrap;
+}
+
+#description {
+  padding: 10vh 0 10vh 0;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#description h1 {
+  font-size: 1.7em;
+  color: #5391ee;
+}
+
+li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  background-color: #2f3e4b;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+navbar li {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#menu-items {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  color: black;
+  padding-right: 50px;
+}
+
+#demonstration {
+  background-image: url(../images/pushup.gif);
+  height: 15em;
+  width: 30em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#demonstration2 {
+  background-image: url(../images/pullup.gif);
+  height: 15em;
+  width: 30em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 20em;
+  top: 20em;
+}
+
+#start {
+  background-color: #5391ee;
+  color: white;
+  border-style: none;
+  width: 100%;
+  border-radius: 1em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  transition: all 0.2s ease-in-out;
+}
+
+#start:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+#transition-banner {
+  background-color: #5391ee;
+  width: 100%;
+  height: 20vh;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#squats_box {
+  width: auto;
+  height: auto;
+}
+
+.pages {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.class-desc {
+  font-size: 0.75em;
+  padding: 1em;
+}
+
+.class-card {
+  background: white;
+  color: black;
+  height: 40%;
+  width: 20%;
+  border: solid 1px grey;
+
+  border-radius: 1em;
+  transition: all 0.2s ease-in-out;
+  margin: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.class-card:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.name {
+  font-size: 32;
+}
+
+.ans {
+  color: rgb(255, 99, 132);
+}
+
+.title {
+  font-size: 27;
+  margin-bottom: 0px;
+}
+
+#classes {
+  padding-top: 20vh;
+  width: 75%;
+  padding-left: 5em;
+  padding-right: 5em;
+  height: 100vh;
+  align-self: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.class-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+  border-radius: 1em;
+}
+
+#squat .class-img {
+  background-image: url("https://experiencelife.lifetime.life/wp-content/uploads/2021/03/Pull-Ups-1280x720.jpg");
+}
+
+#squats {
+  /* padding-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#challenge {
+  display: flex;
+  justify-content: center;
+}
+
+.col-lg-8,
+.offset-lg-2 {
+  align-self: center;
+  text-align: center;
+}
+
+#squats_window {
+  /* width: "1286px" !important;
+  height: "723.375px" !important; */
+  margin-top: 220px;
+}
+
+#challenge_window,
+#squats_window {
+  border: solid 3px #5391ee;
+  max-width: 1286px;
+}
+
+#inst,
+#inst2 {
+  padding-top: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height: 40vh;
+}
+
+#profileCard {
+  display: flex;
+  padding-top: 100px;
+  width: 70%;
+}
+
+#rightCard {
+  width: 110%;
+}
+
+#leftCard {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40em;
+  width: 30em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 20em;
+  top: 20em;
+}
+
+.inst {
+  align-self: center;
+  text-align: center;
+}
+
+#ready-btn {
+  display: block;
+  background-color: #5391ee;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.2s ease-in-out;
+}
+
+#ready-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.instruction h1 {
+  text-align: center;
+}
+
+.inst-image {
+  background-image: url("https://media.istockphoto.com/photos/beautiful-young-sports-lady-doing-push-ups-while-workout-at-home-picture-id1254996126?k=20&m=1254996126&s=612x612&w=0&h=rsKgWYDbSHmyNJ5h40FNtsMVOV-J9AWp8YzuTt-Y2X8=");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: -webkit-fill-available;
+  border-radius: 1em;
+}
+
+.inst2-image {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/e3hD68DPnPUzWoTJpaJ6ye-1200-80.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: -webkit-fill-available;
+  border-radius: 1em;
+}
+
+#bronze {
+  background-image: url("../images/bronze.png");
+  height: 30vh;
+}
+
+#silver {
+  background-image: url("../images/silver.png");
+  height: 40vh;
+}
+
+#gold {
+  background-image: url("../images/gold.png");
+  height: 50vh;
+}
+
+.podium {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 15vw;
+}
+
+#podium_area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  align-self: center;
+  width: 80vw;
+  padding-top: 430px;
+  padding-bottom: 60px;
+}
+
+#bronze,
+#silver,
+#gold {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+#chart_ranking {
+  display: flex;
+  flex-direction: column;
+}
+
+.ranking {
+  display: flex;
+  justify-content: space-between;
+  border: solid 2px #536c92;
+  width: 50vw;
+  height: 7vh;
+  border-radius: 15px;
+  padding: 0 2em 0 2em;
+  margin-bottom: 0.5em;
+}
+
+#leaderboard {
+  display: flex;
+  flex-direction: column;
+}
+
+#chart_ranking {
+  align-items: center;
+}
