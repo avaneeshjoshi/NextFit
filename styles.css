@@ -119,7 +119,7 @@ ul {
 }
 
 #demonstration {
-  background-image: url(../images/pushup.gif);
+  background-image: url(pushup.gif);
   height: 15em;
   width: 30em;
   background-position: center;
@@ -128,7 +128,7 @@ ul {
 }
 
 #demonstration2 {
-  background-image: url(../images/pullup.gif);
+  background-image: url(pullup.gif);
   height: 15em;
   width: 30em;
   background-position: center;
@@ -359,17 +359,17 @@ ul {
 }
 
 #bronze {
-  background-image: url("../images/bronze.png");
+  background-image: url("bronze.png");
   height: 30vh;
 }
 
 #silver {
-  background-image: url("../images/silver.png");
+  background-image: url("silver.png");
   height: 40vh;
 }
 
 #gold {
-  background-image: url("../images/gold.png");
+  background-image: url("gold.png");
   height: 50vh;
 }
 
